@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func Cambio(Hojas [9]string) {
+
+}
+
+func main() {
+	Hojas := [...]string{
+		"Hoja 1",
+		"Hoja 2",
+		"Hoja 3",
+		"Hoja 4",
+		"Hoja 5",
+		"Hoja 6",
+		"Hoja 7",
+		"Hoja 8",
+		"Hoja 9",
+	}
+	Cambio := &Hojas
+	Cambio[0] = "De colores"
+	fmt.Println(Cambio)
+
+}
