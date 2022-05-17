@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func imprimir(board [8][8]string) {
+	fmt.Println(board)
+
+}
+
+func main() {
+	var board [8][8]string
+	board[1][3] = "r"
+	board[0][7] = "r"
+	for column := range board[1] {
+		board[5][column] = "M"
+
+	}
+	imprimir(board)
+}
